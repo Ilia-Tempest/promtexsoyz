@@ -1,0 +1,167 @@
+.action
+    &-buttons
+        font-family: "Montserrat", sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+        text-align: center
+        color: #FF8541
+        padding: 20px 59px
+        background: #FFFFFF
+        border: 1px solid #FF8541
+        border-radius: 4px
+        margin: auto
+        margin-top: 50px
+        display: block
+        cursor: pointer
+        &:hover
+            background: #FF8541
+            color: #424242
+    &-block
+        margin-top: 75px
+    &-slider
+        position: relative
+    &-left
+        position: absolute
+        left: -55px
+        top: 50%
+    &-right
+        position: absolute
+        right: -55px
+        top: 50%
+    &-cursor
+        cursor: pointer
+    &-part
+        padding-top: 230px
+        padding-left: 20px
+        padding-right: 20px
+        padding-bottom: 10px
+        background-image: url(../img/action/background.jpg)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        outline: none
+        margin-right: 55px
+        width: 438px
+    &-content
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &-button
+        font-family: "Montserrat", sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 22px
+        color: #000000
+        padding: 16px 38px
+        background: #FF8541
+        cursor: pointer
+    &-text
+        font-family: "Montserrat", sans-serif
+        font-style: normal
+        font-weight: 600
+        font-size: 30px
+        line-height: 37px
+        color: #FFFFFF
+        text-align: right
+
+.action-dots
+    bottom: 60px
+    display: flex
+   
+    ul 
+      display: flex
+      list-style: none
+      margin: 0
+      padding: 0
+      align-items: center
+      justify-content: center
+      margin-top: 30px
+      li
+        width: auto
+        height: auto
+        margin: 0
+        margin-right: 23px
+        &:last-child
+            margin-right: 0px
+        button 
+            background: #8F8F8F
+            width: 60.3px
+            height: 9.48px
+            overflow: hidden
+            color: white
+            border: none
+            border-radius: 3px
+            border: 1px solid #D8D8D8
+            &::before
+                border: 1px solid #D8D8D8
+                width: 60.3px
+                height: 9.48px 
+            &::after
+                width: 60.3px
+                height: 9.48px
+                border: 1px solid #D8D8D8
+        &.slick-active 
+            button 
+                background: white
+                color: black
+@media (max-width: 1200px)
+    .action
+        &-block
+            margin-top: 50px
+        &-part
+            margin-right: 20px
+@media (max-width: 1000px)
+    .action
+        &-part
+           
+@media (max-width: 768px)
+    
+    .action
+        &-left
+            left: -35px
+        &-right
+            right: -35px
+        &-text
+            font-size: 20px
+        &-content
+            flex-direction: column
+            align-items: flex-end
+        &-part
+            padding-top: 100px
+            padding-left: 10px
+            padding-right: 10px
+            padding-bottom: 10px
+            margin-right: 0px
+            margin-right: 20px
+            width: 250px
+        &-button
+            margin-bottom: 20px
+        &-buttons
+            padding: 10px
+            font-size: 14px
+            margin-top: 25px
+
+@media (max-width: 540px)
+    .action
+        &-button
+            padding: 10px
+            font-size: 12px
+        &-part
+        &-text
+            font-size: 12px
+
+@media (max-width: 380px)
+    .action
+        &-left
+            left: -15px
+        &-right
+            right: -15px
+            
+@media (max-width: 365px)
+    .action-left
+        left: -25px
+    .action-right
+        right: -25px
