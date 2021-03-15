@@ -742,7 +742,6 @@ button {
 .header-href {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
@@ -774,12 +773,16 @@ button {
 }
 
 @media (max-width: 1400px) {
+  .header-href {
+    font-weight: 500;
+  }
   .header-top {
     flex-wrap: wrap;
   }
   .header-title {
     max-width: none;
     font-size: 16px;
+    font-weight: 500;
   }
   .header-phone {
     margin-left: 0px;
@@ -807,6 +810,7 @@ button {
   }
   .header-title {
     margin-left: 0px;
+    font-weight: normal;
   }
   .header-contact {
     margin-left: 0px;
@@ -815,11 +819,15 @@ button {
   }
   .header-logo {
     width: 90px;
+    height: auto;
   }
   .header-info {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
+  }
+  .header-href {
+    font-weight: normal;
   }
   .header-href:first-child {
     margin-top: 5px;
@@ -1024,13 +1032,17 @@ nav ul {
   transform: scaleY(1);
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .topmenu > li > a {
-    font-size: 18px;
-    padding: 15px 10px;
+    font-size: 16px;
+    padding: 15px 15px;
+  }
+  .submenu {
+    width: 300px;
   }
   .submenu a {
-    font-size: 16px;
+    font-size: 15px;
+    line-height: normal;
     padding: 6px 15px;
   }
 }
@@ -1220,7 +1232,7 @@ nav ul {
 
 .hero-part {
   padding-top: 85px;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
   background-image: url(../img/hero/background-one.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1322,13 +1334,10 @@ nav ul {
   color: black;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .hero-part {
     padding-top: 100px;
     padding-bottom: 100px;
-  }
-  .hero-title {
-    font-size: 50px;
   }
   .hero-text {
     font-size: 18px;
@@ -1472,8 +1481,14 @@ nav ul {
   .icon-title {
     font-size: 16px;
   }
+}
+
+@media (max-width: 1200px) {
   .icon-part {
     width: calc(1/4*100% - 50px);
+  }
+  .icon-title {
+    font-size: 14px;
   }
 }
 
@@ -2356,6 +2371,11 @@ nav ul {
   align-items: flex-start;
 }
 
+.contact-info__img {
+  width: 22px;
+  height: 22px;
+}
+
 .contact-info__a {
   display: flex;
   align-items: center;
@@ -2376,11 +2396,6 @@ nav ul {
   margin-left: 15px;
 }
 
-.contact-info__img {
-  width: 31px;
-  height: 30px;
-}
-
 .contact-map {
   width: 100%;
   margin-top: 45px;
@@ -2398,12 +2413,12 @@ nav ul {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .contact-form {
-    width: 48%;
+    width: 46%;
   }
   .contact-info {
-    width: 48%;
+    width: 46%;
   }
   .contact-check {
     width: 100%;
@@ -2411,11 +2426,15 @@ nav ul {
   .contact-input {
     width: 100%;
   }
+  .contact-info__text {
+    font-size: 16px;
+  }
   .contact-info__a {
     width: auto;
   }
   .contact-button {
     width: 100%;
+    font-size: 18px;
   }
 }
 
@@ -2530,9 +2549,9 @@ nav ul {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 30px;
+  line-height: normal;
   color: #FFFFFF;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .footer-a:first-child {
@@ -2602,16 +2621,18 @@ nav ul {
   color: #FFFFFF;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
+  .footer-a {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: normal;
+  }
   .footer-logo {
     width: 90px;
   }
 }
 
 @media (max-width: 1200px) {
-  .footer-a {
-    font-size: 16px;
-  }
   .footer-logo {
     width: 70px;
   }

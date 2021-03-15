@@ -67,6 +67,9 @@
         display: flex
         flex-direction: column
         align-items: flex-start
+        &__img
+            width: 22px
+            height: 22px
         &__a
             display: flex
             align-items: center
@@ -81,9 +84,6 @@
             line-height: 22px
             color: #000000
             margin-left: 15px
-        &__img
-            width: 31px
-            height: 30px
     &-map
         width: 100%
         margin-top: 45px
@@ -99,23 +99,25 @@
             &__a
                 width: 400px
 
-@media (max-width: 1300px)
+@media (max-width: 1400px)
     .contact
         &-form
-            width: 48%
+            width: 46%
         &-info
-            width: 48%
+            width: 46%
         &-check
             width: 100%
         &-input
             width: 100%
         
         &-info
+            &__text
+                font-size: 16px
             &__a
                 width: auto
         &-button
             width: 100%
-
+            font-size: 18px
 @media (max-width: 960px)
     .contact
         &-block

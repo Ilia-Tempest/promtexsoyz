@@ -27,7 +27,6 @@
     &-href
         font-family: "Montserrat", sans-serif
         font-style: normal
-        font-weight: normal
         font-size: 16px
         line-height: 20px
         color: #000000
@@ -52,12 +51,15 @@
         margin-left: 30px
 
 @media (max-width: 1400px)
-    .header
+    .header   
+        &-href
+            font-weight: 500   
         &-top
             flex-wrap: wrap
         &-title
             max-width: none
             font-size: 16px
+            font-weight: 500
         &-phone
             margin-left: 0px
         &-info
@@ -78,17 +80,20 @@
             margin-left: 0px
         &-title
             margin-left: 0px
+            font-weight: normal
         &-contact
             margin-left: 0px
             width: 100%
             justify-content: space-between
         &-logo
             width: 90px
+            height: auto
         &-info
             display: flex
             flex-direction: column-reverse
             align-items: flex-start
         &-href
+            font-weight: normal
             &:first-child
                 margin-top: 5px
             &:last-child

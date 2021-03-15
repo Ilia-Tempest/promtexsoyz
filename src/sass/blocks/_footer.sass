@@ -22,9 +22,9 @@
         font-style: normal
         font-weight: normal
         font-size: 18px
-        line-height: 30px
+        line-height: normal
         color: #FFFFFF
-        margin-top: 5px
+        margin-top: 10px
         &:first-child
             margin-top: 0px
     &-social
@@ -74,16 +74,18 @@
             line-height: 20px
             color: #FFFFFF
 
-@media (max-width: 1500px)
+@media (max-width: 1400px)
     .footer
+        &-a
+            margin-top: 8px
+            font-size: 16px
+            line-height: normal
         &-logo
             width: 90px
       
 
 @media (max-width: 1200px)
     .footer
-        &-a
-            font-size: 16px
         &-logo
             width: 70px
         &-search
