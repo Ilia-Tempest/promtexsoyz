@@ -56,17 +56,17 @@ nav ul
   transform: scaleY(0)
   transform-origin: 0 0
   transition: 0.5s ease-in-out
-  background: #FFFFFF
-  border: 2px solid #424242
+  background: #424242
+  border: 0.7px solid #FFFFFF
 .submenu a
   text-align: left
   padding: 8px 15px
   font-family: "Montserrat", sans-serif
   font-style: normal
-  font-weight: normal
+  font-weight: 500
   font-size: 15px
   line-height: 27px
-  color: #000000
+  color: #FFFFFF
 .submenu li a:hover
     border-left: 0px
     border-right: 0px
@@ -94,7 +94,7 @@ nav ul
         padding: 15px 10px
     .submenu a
         font-size: 14px
-        padding: 5px 15px
+        padding: 10px 15px
 
 @media (max-width: 768px)
     .header-line
@@ -135,8 +135,13 @@ nav ul
         transition: 0.2s all
     .submenu
         width: 100%
+        background: #FFFFFF
         top: 15%
         border: 0
+    .submenu a
+        color: #424242
+        font-weight: normal
+        line-height: 16px
     .header-nav
         background: #FFFFFF
         position: fixed

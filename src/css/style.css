@@ -774,7 +774,8 @@ button {
 
 @media (max-width: 1400px) {
   .header-href {
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 18px;
   }
   .header-top {
     flex-wrap: wrap;
@@ -1003,8 +1004,8 @@ nav ul {
   transform: scaleY(0);
   transform-origin: 0 0;
   transition: 0.5s ease-in-out;
-  background: #FFFFFF;
-  border: 2px solid #424242;
+  background: #424242;
+  border: 0.7px solid #FFFFFF;
 }
 
 .submenu a {
@@ -1012,10 +1013,10 @@ nav ul {
   padding: 8px 15px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 15px;
   line-height: 27px;
-  color: #000000;
+  color: #FFFFFF;
 }
 
 .submenu li a:hover {
@@ -1054,7 +1055,7 @@ nav ul {
   }
   .submenu a {
     font-size: 14px;
-    padding: 5px 15px;
+    padding: 10px 15px;
   }
 }
 
@@ -1105,8 +1106,14 @@ nav ul {
   }
   .submenu {
     width: 100%;
+    background: #FFFFFF;
     top: 15%;
     border: 0;
+  }
+  .submenu a {
+    color: #424242;
+    font-weight: normal;
+    line-height: 16px;
   }
   .header-nav {
     background: #FFFFFF;
@@ -1482,7 +1489,7 @@ nav ul {
     font-size: 16px;
   }
   .icon-part {
-    height: 150px;
+    height: 140px;
   }
 }
 
