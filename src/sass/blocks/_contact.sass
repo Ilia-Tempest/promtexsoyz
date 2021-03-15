@@ -1,23 +1,23 @@
 .contact
     &-block
-        margin-top: 70px
+        margin-top: 50px
         display: flex
         justify-content: space-around
-        align-items: center
+        align-items: flex-start
         flex-wrap: wrap
     &-form
         display: flex   
         align-items: flex-start
         flex-direction: column
     &-textarea
-        height: 156px
+        height: 121px
     &-input
         border: 0.5px solid #424242
         border-radius: 4px
-        padding-top: 20px
-        padding-bottom: 20px
-        text-indent: 14px
-        width: 600px
+        padding-top: 15px
+        padding-bottom: 15px
+        text-indent: 11px
+        width: 486px
         margin-top: 20px
         outline: none
         &:first-child
@@ -26,13 +26,13 @@
             font-family: "Montserrat", sans-serif
             font-style: normal
             font-weight: 200
-            font-size: 16px
-            line-height: 20px
+            font-size: 12px
+            line-height: 15px
             color: #000000
     &-check
         display: flex
         align-items: center
-        width: 600px
+        width: 486px
         margin-top: 20px
         &__input input[type=checkbox]
             border: 0.5px solid #424242
@@ -42,9 +42,9 @@
             font-family: "Montserrat", sans-serif
             font-style: normal
             font-weight: 300
-            font-size: 18px
-            line-height: 22px
-            margin-left: 20px
+            font-size: 15px
+            line-height: 18px
+            margin-left: 15px
             cursor: pointer
         &__a
             font-weight: bold
@@ -53,14 +53,14 @@
         background: #FFFFFF
         border: 1px solid #FF8541
         border-radius: 4px
-        padding-top: 21px
-        padding-bottom: 21px
-        width: 600px
+        padding-top: 15px
+        padding-bottom: 15px
+        width: 486px
         font-family: "Montserrat", sans-serif
         font-style: normal
         font-weight: bold
-        font-size: 22px
-        line-height: 27px
+        font-size: 20px
+        line-height: 24px
         color: #FF8541
         margin-top: 20px
     &-info
@@ -70,39 +70,36 @@
         &__a
             display: flex
             align-items: center
-            margin-top: 40px
+            margin-top: 30px
             &:first-child
                 margin-top: 0px
         &__text
             font-family: "Montserrat", sans-serif
             font-style: normal
             font-weight: normal
-            font-size: 24px
+            font-size: 18px
             line-height: 22px
             color: #000000
-            margin-left: 20px
+            margin-left: 15px
         &__img
             width: 31px
             height: 30px
     &-map
         width: 100%
-        margin-top: 55px
+        margin-top: 45px
 
 @media (max-width: 1600px)
     .contact
         &-block
             justify-content: space-between
-        &-input
-            width: 500px
         &-check
-            width: 500px
-        &-button
-            width: 500px
+            width: 486px
+        
         &-info
             &__a
                 width: 400px
 
-@media (max-width: 1200px)
+@media (max-width: 1300px)
     .contact
         &-form
             width: 48%
@@ -112,18 +109,17 @@
             width: 100%
         &-input
             width: 100%
-        &-form
-            margin-top: 30px
+        
         &-info
             &__a
                 width: auto
         &-button
             width: 100%
 
-@media (max-width: 900px)
+@media (max-width: 960px)
     .contact
         &-block
-            margin-top: 50px
+            margin-top: 30px
         &-form
             width: 100%
         &-info
@@ -131,19 +127,14 @@
             align-items: center
             &__a
                 justify-content: center
-            &__text
-                width: 60%
+           
             &__text
                 text-align: center
         &-block
             flex-direction: column-reverse
         &-form
             margin-top: 30px
-@media (max-width: 750px)
-    .contact
-        &-info
-            &__text
-                font-size: 20px
+
                
 @media (max-width: 540px)
     .contact

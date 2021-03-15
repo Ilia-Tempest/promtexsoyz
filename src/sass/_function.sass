@@ -21,16 +21,20 @@ button
   font-family: "Montserrat", sans-serif
   font-style: normal
   font-weight: 600
-  font-size: 55px
-  line-height: 67px
+  font-size: 40px
+  line-height: 49px
   color: #424242
   text-align: center
 .section
-  margin-top: 130px
+  margin-top: 80px
 .container
-  width: 80%
+  max-width: 1140px
   margin: auto
-@media (max-width: 1200px)
+
+
+@media (max-width: 1400px)
+  .container
+    max-width: 75%
   .section
     margin-top: 60px
 @media (max-width: 768px)
@@ -41,9 +45,9 @@ button
     line-height: normal
 @media (max-width: 600px)
   .container
-    width: 90%
+    max-width: 90%
   .container-action
-    width: 80%
+    max-width: 80%
 
 @media (max-width: 540px)
   [type="checkbox"], [type="radio"]

@@ -1,9 +1,10 @@
 .header
     &-logo
-        width: 110px
+        width: 85px
+        height: 91px
     &-content
-        padding-top: 20px
-        padding-bottom: 20px
+        padding-top: 15px
+        padding-bottom: 15px
         background-image: url(../img/header/background-content.jpg)
         background-size: cover
         background-repeat: no-repeat
@@ -12,68 +13,75 @@
         display: flex
         justify-content: space-between
         align-items: center
-        flex-wrap: wrap
+    
     &-title
         font-family: "Montserrat", sans-serif
         font-style: normal
         font-weight: 300
-        font-size: 26px
-        line-height: 129.7%
-        letter-spacing: -0.04em
+        font-size: 18.5px
+        line-height: 23px
         color: #424242
-        max-width: 445px
+        max-width: 330px
         margin-left: 20px
         text-align: center
     &-href
         font-family: "Montserrat", sans-serif
         font-style: normal
         font-weight: normal
-        font-size: 23px
-        line-height: 28px
+        font-size: 16px
+        line-height: 20px
         color: #000000
     &-phone
-        margin-left: 50px
+        margin-left: 45px
     &-button
         border: 1px solid #FF8541
         border-radius: 4px
         background: #ffffff
-        padding: 10px 32px
+        padding: 10px 30px
         font-family: "Montserrat", sans-serif
         font-style: normal
         font-weight: 500
-        font-size: 21px
+        font-size: 20px
         line-height: 24px
         color: #FF8541
         cursor: pointer
-        margin-left: 40px
+        margin-left: 45px
     &-contact
         display: flex
         align-items: center
-        flex-wrap: wrap
-        margin-left: 20px
-@media (max-width: 1771px)
+        margin-left: 30px
+
+@media (max-width: 1400px)
+    .header
+        &-top
+            flex-wrap: wrap
+        &-title
+            max-width: none
+            font-size: 16px
+        &-phone
+            margin-left: 0px
+        &-info
+            display: flex
+            flex-direction: column
+        &-button
+            font-size: 16px
+            padding: 10px 20px
+            line-height: normal
+       
+@media (max-width: 1142px)
     .header
         &-contact
             margin-top: 30px
-            width: 100%
-            justify-content: space-between
-@media (max-width: 1730px)
+@media (max-width: 1030px)
     .header
-        &-contact
+        &-button
             margin-left: 0px
         &-title
             margin-left: 0px
-        &-button
+        &-contact
             margin-left: 0px
-
-@media (max-width: 1200px)
-    .header
-        &-href
-            font-size: 20px
-       
-
-@media (max-width: 1030px)
-    .header
+            width: 100%
+            justify-content: space-between
         &-logo
             width: 90px
         &-info
@@ -88,6 +96,11 @@
 
 @media (max-width: 768px)
     .header
+        &-contact
+            margin-top: 30px
+            margin-left: 0px
+            width: 100%
+            justify-content: space-between
         &-head
             width: 100%
             display: flex
@@ -100,6 +113,7 @@
             height: 3.33px
             background: #FF8541
             border-radius: 5px
+            
             
             &::before
                 content: ''
@@ -123,14 +137,12 @@
         &-logo
             width: 70px
         &-title
-            font-size: 20px
             max-width: 340px
             margin-left: 0px
         &-href
             font-size: 16px
         &-button
-            font-size: 16px
-            padding: 7px 30px
+            margin-left: 0px
 
 @media (max-width: 540px)
     .header

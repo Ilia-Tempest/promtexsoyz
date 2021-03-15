@@ -26,7 +26,7 @@ $(document).ready(function() {
             {
               breakpoint: 1200,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 infinite: true,
                 variableWidth: false,
                 

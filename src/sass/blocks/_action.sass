@@ -3,23 +3,23 @@
         font-family: "Montserrat", sans-serif
         font-style: normal
         font-weight: 500
-        font-size: 20px
-        line-height: 24px
+        font-size: 14px
+        line-height: 17px
         text-align: center
         color: #FF8541
-        padding: 20px 59px
+        padding: 15px 35px
         background: #FFFFFF
         border: 1px solid #FF8541
         border-radius: 4px
         margin: auto
-        margin-top: 50px
+        margin-top: 35px
         display: block
         cursor: pointer
         &:hover
             background: #FF8541
             color: #424242
     &-block
-        margin-top: 75px
+        margin-top: 30px
     &-slider
         position: relative
     &-left
@@ -32,8 +32,10 @@
         top: 50%
     &-cursor
         cursor: pointer
+        width: 25px
+        height: 25px
     &-part
-        padding-top: 230px
+        padding-top: 20px
         padding-left: 20px
         padding-right: 20px
         padding-bottom: 10px
@@ -42,31 +44,36 @@
         background-position: center
         background-size: cover
         outline: none
-        margin-right: 55px
-        width: 438px
+        margin-right: 45px
+        width: 320px
+        align-items: flex-end
+        flex-direction: column
     &-content
         display: flex
         align-items: center
-        justify-content: space-between
+        justify-content: center
+        flex-direction: column
     &-button
         font-family: "Montserrat", sans-serif
         font-style: normal
         font-weight: normal
-        font-size: 18px
-        line-height: 22px
+        font-size: 13px
+        line-height: 16px
         color: #000000
-        padding: 16px 38px
+        padding: 6px 25px
         background: #FF8541
         cursor: pointer
+        align-self: flex-start
     &-text
         font-family: "Montserrat", sans-serif
         font-style: normal
         font-weight: 600
-        font-size: 30px
-        line-height: 37px
+        font-size: 21px
+        line-height: 26px
         color: #FFFFFF
         text-align: right
-
+        width: 193.91px
+        margin-top: 130px
 .action-dots
     bottom: 60px
     display: flex
@@ -88,21 +95,24 @@
             margin-right: 0px
         button 
             background: #8F8F8F
-            width: 60.3px
-            height: 9.48px
+            width: 28px;
+            height: 4.52px;
             overflow: hidden
             color: white
             border: none
             border-radius: 3px
             border: 1px solid #D8D8D8
+            padding: 0
             &::before
                 border: 1px solid #D8D8D8
-                width: 60.3px
-                height: 9.48px 
+                width: 28px;
+                height: 4.52px;
             &::after
-                width: 60.3px
-                height: 9.48px
+                width: 28px;
+                padding: 0
+                height: 4.52px;
                 border: 1px solid #D8D8D8
+                padding: 0
         &.slick-active 
             button 
                 background: white
@@ -126,11 +136,13 @@
             right: -35px
         &-text
             font-size: 20px
+            margin-top: 100px
         &-content
             flex-direction: column
             align-items: flex-end
+            
         &-part
-            padding-top: 100px
+            padding-top: 10px
             padding-left: 10px
             padding-right: 10px
             padding-bottom: 10px

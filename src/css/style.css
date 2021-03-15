@@ -377,22 +377,25 @@ button {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 55px;
-  line-height: 67px;
+  font-size: 40px;
+  line-height: 49px;
   color: #424242;
   text-align: center;
 }
 
 .section {
-  margin-top: 130px;
+  margin-top: 80px;
 }
 
 .container {
-  width: 80%;
+  max-width: 1140px;
   margin: auto;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
+  .container {
+    max-width: 75%;
+  }
   .section {
     margin-top: 60px;
   }
@@ -410,10 +413,10 @@ button {
 
 @media (max-width: 600px) {
   .container {
-    width: 90%;
+    max-width: 90%;
   }
   .container-action {
-    width: 80%;
+    max-width: 80%;
   }
 }
 
@@ -705,12 +708,13 @@ button {
 /*Стили для главной страницы*/
 /*Стили для шапки*/
 .header-logo {
-  width: 110px;
+  width: 85px;
+  height: 91px;
 }
 
 .header-content {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-image: url(../img/header/background-content.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -721,18 +725,16 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .header-title {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 26px;
-  line-height: 129.7%;
-  letter-spacing: -0.04em;
+  font-size: 18.5px;
+  line-height: 23px;
   color: #424242;
-  max-width: 445px;
+  max-width: 330px;
   margin-left: 20px;
   text-align: center;
 }
@@ -741,64 +743,76 @@ button {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 23px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 20px;
   color: #000000;
 }
 
 .header-phone {
-  margin-left: 50px;
+  margin-left: 45px;
 }
 
 .header-button {
   border: 1px solid #FF8541;
   border-radius: 4px;
   background: #ffffff;
-  padding: 10px 32px;
+  padding: 10px 30px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 24px;
   color: #FF8541;
   cursor: pointer;
-  margin-left: 40px;
+  margin-left: 45px;
 }
 
 .header-contact {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
-@media (max-width: 1771px) {
-  .header-contact {
-    margin-top: 30px;
-    width: 100%;
-    justify-content: space-between;
+@media (max-width: 1400px) {
+  .header-top {
+    flex-wrap: wrap;
+  }
+  .header-title {
+    max-width: none;
+    font-size: 16px;
+  }
+  .header-phone {
+    margin-left: 0px;
+  }
+  .header-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    line-height: normal;
   }
 }
 
-@media (max-width: 1730px) {
+@media (max-width: 1142px) {
   .header-contact {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .header-button {
     margin-left: 0px;
   }
   .header-title {
     margin-left: 0px;
   }
-  .header-button {
+  .header-contact {
     margin-left: 0px;
+    width: 100%;
+    justify-content: space-between;
   }
-}
-
-@media (max-width: 1200px) {
-  .header-href {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 1030px) {
   .header-logo {
     width: 90px;
   }
@@ -816,6 +830,12 @@ button {
 }
 
 @media (max-width: 768px) {
+  .header-contact {
+    margin-top: 30px;
+    margin-left: 0px;
+    width: 100%;
+    justify-content: space-between;
+  }
   .header-head {
     width: 100%;
     display: flex;
@@ -855,7 +875,6 @@ button {
     width: 70px;
   }
   .header-title {
-    font-size: 20px;
     max-width: 340px;
     margin-left: 0px;
   }
@@ -863,8 +882,7 @@ button {
     font-size: 16px;
   }
   .header-button {
-    font-size: 16px;
-    padding: 7px 30px;
+    margin-left: 0px;
   }
 }
 
@@ -954,11 +972,10 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 24.5px;
-  line-height: 30px;
-  letter-spacing: 0.014em;
+  font-size: 18.5px;
+  line-height: 23px;
   color: #FFFFFF;
-  padding: 20px 15px;
+  padding: 15px 20px;
   border: 0.2px solid rgba(205, 214, 219, 0);
 }
 
@@ -988,9 +1005,8 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 34px;
-  letter-spacing: 0.013em;
+  font-size: 15px;
+  line-height: 27px;
   color: #000000;
 }
 
@@ -1056,6 +1072,7 @@ nav ul {
     position: fixed;
     right: 5%;
     height: 0px;
+    top: 30px;
   }
   .show-active::before {
     transform: rotate(-45deg);
@@ -1202,7 +1219,7 @@ nav ul {
 }
 
 .hero-part {
-  padding-top: 120px;
+  padding-top: 85px;
   padding-bottom: 200px;
   background-image: url(../img/hero/background-one.jpg);
   background-repeat: no-repeat;
@@ -1215,8 +1232,8 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 64px;
-  line-height: 78px;
+  font-size: 40px;
+  line-height: 49px;
   color: #FFFFFF;
   text-align: center;
 }
@@ -1225,24 +1242,24 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 22px;
   text-align: center;
   color: #FFFFFF;
-  margin-top: 50px;
-  margin-bottom: 75px;
+  margin-top: 45px;
+  margin-bottom: 55px;
   max-width: 930px;
 }
 
 .hero-button {
-  padding: 18px 50px;
+  padding: 12px 34px;
   background: #FF8541;
   border-radius: 4px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 19px;
+  line-height: 23px;
   text-align: center;
   color: #424242;
   cursor: pointer;
@@ -1279,8 +1296,9 @@ nav ul {
 
 .hero-dots ul li button {
   background: #8F8F8F;
-  width: 60.3px;
-  height: 9.48px;
+  width: 28px;
+  padding: 0;
+  height: 4.52px;
   overflow: hidden;
   color: white;
   border: none;
@@ -1288,13 +1306,15 @@ nav ul {
 }
 
 .hero-dots ul li button::before {
-  width: 60.3px;
-  height: 9.48px;
+  width: 28px;
+  padding: 0;
+  height: 4.52px;
 }
 
 .hero-dots ul li button::after {
-  width: 60.3px;
-  height: 9.48px;
+  width: 28px;
+  padding: 0;
+  height: 4.52px;
 }
 
 .hero-dots ul li.slick-active button {
@@ -1418,21 +1438,21 @@ nav ul {
 .icon-part {
   border: 1px solid #424242;
   border-radius: 4px;
-  height: 231px;
+  height: 188px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-top: 50px;
-  width: calc(1/5*100% - 50px);
+  margin-top: 40px;
+  width: calc(1/5*100% - 20px);
 }
 
 .icon-title {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 21px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 18px;
   color: #000000;
   margin-top: 10px;
   text-align: center;
@@ -1441,6 +1461,7 @@ nav ul {
 @media (max-width: 1840px) {
   .icon-part {
     padding: 15px;
+    width: calc(1/5*100% - 50px);
   }
   .icon-title {
     font-size: 18px;
@@ -1463,6 +1484,9 @@ nav ul {
 }
 
 @media (max-width: 768px) {
+  .icon-part {
+    height: 150px;
+  }
   .icon-title {
     font-size: 12px;
   }
@@ -1513,13 +1537,13 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 17px;
+  line-height: 21px;
   text-align: center;
   color: #000000;
   max-width: 1056px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .about-a {
@@ -1543,7 +1567,7 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-left: 35px;
   padding-right: 35px;
   padding-bottom: 20px;
@@ -1554,8 +1578,8 @@ nav ul {
 .about-round {
   border-radius: 100px;
   background: #424242;
-  width: 65px;
-  height: 65px;
+  width: 51px;
+  height: 51px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1576,7 +1600,7 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 31px;
   color: #424242;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -1586,7 +1610,7 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 32px;
   color: #18191F;
 }
@@ -1678,7 +1702,7 @@ nav ul {
 
 /*Стили для блока _service*/
 .section-service {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .service {
@@ -1691,15 +1715,15 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 17px;
   text-align: center;
   color: #FF8541;
-  padding: 20px;
+  padding: 13px 15px;
   background: #FFFFFF;
   border: 1px solid #FF8541;
   border-radius: 4px;
-  margin-top: 70px;
+  margin-top: 50px;
   cursor: pointer;
 }
 
@@ -1724,13 +1748,13 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 15px;
+  line-height: 18px;
   color: #000000;
   max-width: 400px;
   display: none;
   transition: max-height 0.2s ease-out;
-  margin-top: 20px;
+  margin-top: 12px;
 }
 
 .service-block {
@@ -1751,8 +1775,8 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 25px;
+  line-height: 30px;
   color: #424242;
   margin-left: 20px;
   margin-right: 15px;
@@ -1760,6 +1784,8 @@ nav ul {
 
 .service-cursor {
   cursor: pointer;
+  width: 21.58px;
+  height: 20.91px;
 }
 
 @media (max-width: 1500px) {
@@ -1876,7 +1902,7 @@ nav ul {
 
 /*Стили для блока _edge*/
 .edge-block {
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -1896,11 +1922,11 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 21px;
+  line-height: 26px;
   text-align: center;
   color: #424242;
-  max-width: 230px;
+  max-width: 185px;
   margin-top: 10px;
 }
 
@@ -1908,8 +1934,8 @@ nav ul {
   background: #424242;
   border: 1px solid #000000;
   border-radius: 100px;
-  width: 85px;
-  height: 85px;
+  width: 66px;
+  height: 61.39px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1920,14 +1946,14 @@ nav ul {
   width: 100%;
   position: absolute;
   border-width: thick;
-  bottom: 52%;
+  bottom: 70%;
 }
 
 .edge-line__two {
   display: none;
 }
 
-@media (max-width: 1820px) {
+@media (max-width: 1400px) {
   .edge-line {
     transform: translate(-50%);
     left: 50%;
@@ -2016,16 +2042,16 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 17px;
   text-align: center;
   color: #FF8541;
-  padding: 20px 59px;
+  padding: 15px 35px;
   background: #FFFFFF;
   border: 1px solid #FF8541;
   border-radius: 4px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 35px;
   display: block;
   cursor: pointer;
 }
@@ -2036,7 +2062,7 @@ nav ul {
 }
 
 .action-block {
-  margin-top: 75px;
+  margin-top: 30px;
 }
 
 .action-slider {
@@ -2057,10 +2083,12 @@ nav ul {
 
 .action-cursor {
   cursor: pointer;
+  width: 25px;
+  height: 25px;
 }
 
 .action-part {
-  padding-top: 230px;
+  padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
@@ -2069,36 +2097,42 @@ nav ul {
   background-position: center;
   background-size: cover;
   outline: none;
-  margin-right: 55px;
-  width: 438px;
+  margin-right: 45px;
+  width: 320px;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
 .action-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .action-button {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 13px;
+  line-height: 16px;
   color: #000000;
-  padding: 16px 38px;
+  padding: 6px 25px;
   background: #FF8541;
   cursor: pointer;
+  align-self: flex-start;
 }
 
 .action-text {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 21px;
+  line-height: 26px;
   color: #FFFFFF;
   text-align: right;
+  width: 193.91px;
+  margin-top: 130px;
 }
 
 .action-dots {
@@ -2129,25 +2163,28 @@ nav ul {
 
 .action-dots ul li button {
   background: #8F8F8F;
-  width: 60.3px;
-  height: 9.48px;
+  width: 28px;
+  height: 4.52px;
   overflow: hidden;
   color: white;
   border: none;
   border-radius: 3px;
   border: 1px solid #D8D8D8;
+  padding: 0;
 }
 
 .action-dots ul li button::before {
   border: 1px solid #D8D8D8;
-  width: 60.3px;
-  height: 9.48px;
+  width: 28px;
+  height: 4.52px;
 }
 
 .action-dots ul li button::after {
-  width: 60.3px;
-  height: 9.48px;
+  width: 28px;
+  padding: 0;
+  height: 4.52px;
   border: 1px solid #D8D8D8;
+  padding: 0;
 }
 
 .action-dots ul li.slick-active button {
@@ -2173,13 +2210,14 @@ nav ul {
   }
   .action-text {
     font-size: 20px;
+    margin-top: 100px;
   }
   .action-content {
     flex-direction: column;
     align-items: flex-end;
   }
   .action-part {
-    padding-top: 100px;
+    padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
@@ -2227,10 +2265,10 @@ nav ul {
 
 /*Стили для блока _contact*/
 .contact-block {
-  margin-top: 70px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -2241,16 +2279,16 @@ nav ul {
 }
 
 .contact-textarea {
-  height: 156px;
+  height: 121px;
 }
 
 .contact-input {
   border: 0.5px solid #424242;
   border-radius: 4px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-indent: 14px;
-  width: 600px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-indent: 11px;
+  width: 486px;
   margin-top: 20px;
   outline: none;
 }
@@ -2263,15 +2301,15 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 200;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 15px;
   color: #000000;
 }
 
 .contact-check {
   display: flex;
   align-items: center;
-  width: 600px;
+  width: 486px;
   margin-top: 20px;
 }
 
@@ -2285,9 +2323,9 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 22px;
-  margin-left: 20px;
+  font-size: 15px;
+  line-height: 18px;
+  margin-left: 15px;
   cursor: pointer;
 }
 
@@ -2300,14 +2338,14 @@ nav ul {
   background: #FFFFFF;
   border: 1px solid #FF8541;
   border-radius: 4px;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  width: 600px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 486px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
-  line-height: 27px;
+  font-size: 20px;
+  line-height: 24px;
   color: #FF8541;
   margin-top: 20px;
 }
@@ -2321,7 +2359,7 @@ nav ul {
 .contact-info__a {
   display: flex;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .contact-info__a:first-child {
@@ -2332,10 +2370,10 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 22px;
   color: #000000;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .contact-info__img {
@@ -2345,28 +2383,22 @@ nav ul {
 
 .contact-map {
   width: 100%;
-  margin-top: 55px;
+  margin-top: 45px;
 }
 
 @media (max-width: 1600px) {
   .contact-block {
     justify-content: space-between;
   }
-  .contact-input {
-    width: 500px;
-  }
   .contact-check {
-    width: 500px;
-  }
-  .contact-button {
-    width: 500px;
+    width: 486px;
   }
   .contact-info__a {
     width: 400px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .contact-form {
     width: 48%;
   }
@@ -2379,9 +2411,6 @@ nav ul {
   .contact-input {
     width: 100%;
   }
-  .contact-form {
-    margin-top: 30px;
-  }
   .contact-info__a {
     width: auto;
   }
@@ -2390,9 +2419,9 @@ nav ul {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   .contact-block {
-    margin-top: 50px;
+    margin-top: 30px;
   }
   .contact-form {
     width: 100%;
@@ -2405,9 +2434,6 @@ nav ul {
     justify-content: center;
   }
   .contact-info__text {
-    width: 60%;
-  }
-  .contact-info__text {
     text-align: center;
   }
   .contact-block {
@@ -2415,12 +2441,6 @@ nav ul {
   }
   .contact-form {
     margin-top: 30px;
-  }
-}
-
-@media (max-width: 750px) {
-  .contact-info__text {
-    font-size: 20px;
   }
 }
 
@@ -2509,8 +2529,8 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 38px;
+  font-size: 18px;
+  line-height: 30px;
   color: #FFFFFF;
   margin-top: 5px;
 }
@@ -2520,7 +2540,7 @@ nav ul {
 }
 
 .footer-social__a {
-  margin-right: 25px;
+  margin-right: 17px;
 }
 
 .footer-social__a:last-child {
@@ -2534,9 +2554,9 @@ nav ul {
 }
 
 .footer-search {
-  text-indent: 13px;
-  width: 331px;
-  margin-bottom: 35px;
+  text-indent: 8px;
+  width: 209px;
+  margin-bottom: 21px;
   background: #656565;
   border-radius: 4px;
   padding-top: 10px;
@@ -2548,7 +2568,7 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 200;
-  font-size: 20px;
+  font-size: 16px;
   line-height: normal;
   color: #FFFFFF;
 }
@@ -2558,12 +2578,12 @@ nav ul {
 }
 
 .footer-title {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 27px;
-  line-height: 38px;
+  font-size: 17px;
+  line-height: normal;
   color: #FFFFFF;
 }
 
@@ -2577,20 +2597,14 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 20px;
   color: #FFFFFF;
 }
 
 @media (max-width: 1500px) {
   .footer-logo {
     width: 90px;
-  }
-  .footer-a {
-    font-size: 18px;
-  }
-  .footer-title {
-    font-size: 22px;
   }
 }
 
