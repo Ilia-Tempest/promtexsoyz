@@ -1481,6 +1481,9 @@ nav ul {
   .icon-title {
     font-size: 16px;
   }
+  .icon-part {
+    height: 150px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2240,9 +2243,6 @@ nav ul {
     margin-right: 20px;
     width: 250px;
   }
-  .action-button {
-    margin-bottom: 20px;
-  }
   .action-buttons {
     padding: 10px;
     font-size: 14px;
@@ -2252,7 +2252,7 @@ nav ul {
 
 @media (max-width: 540px) {
   .action-button {
-    padding: 10px;
+    padding: 5px 8px;
     font-size: 12px;
   }
   .action-text {
